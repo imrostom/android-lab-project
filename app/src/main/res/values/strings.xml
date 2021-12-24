@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LabProject</string>
+    <string name="app_name">Green Messenger</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -19,6 +19,17 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="register_here">-- Register Here --</string>
+    <string name="todo">TODO</string>
+    <string name="user_list">User List</string>
+    <string name="profile">Profile</string>
+    <string name="team_page">Team Page</string>
     <string name="textview">TextView</string>
+    <string name="message_with_me">Message With Me</string>
+    <string name="image">Image</string>
+    <string name="todo">TODO</string>
+    <string name="android_charting_application_xml_ui_design_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_android_charting_application_xml_ui_design">Android charting application xml ui design. Android charting application xml ui design tutorial with example. Android charting application xml ui design. Android charting application xml ui design.</string>
+    <string name="android_charting_application_xml_ui_design_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_android_charting_application_xml_ui_design">Android charting application xml ui design. Android charting application xml ui design tutorial with example. Android charting application xml ui design. Android charting application xml ui design.</string>
+    <string name="android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example">Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example.</string>
+    <string name="todo">TODO</string>
     <string name="todo">TODO</string>
 </resources>

@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Chat extends AppCompatActivity {
+public class User extends AppCompatActivity {
 
     String[] mainTitle = {
             "Rostom Ali",
@@ -37,18 +37,15 @@ public class Chat extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.activity_user);
 
         MyListAdapter adapter = new MyListAdapter(this, mainTitle, subTitle, imgId);
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(adapter);
+        ListView userList = (ListView) findViewById(R.id.userList);
+        userList.setAdapter(adapter);
 
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), Chatbox.class);
-                startActivity(intent);
-            }
+        userList.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent = new Intent(getApplicationContext(), Message.class);
+            startActivity(intent);
         });
     }
 }

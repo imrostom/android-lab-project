@@ -17,7 +17,7 @@ public class MyListAdapter extends ArrayAdapter<String> {
     private final Integer[] imgId;
 
     public MyListAdapter(Activity context, String[] mainTitle, String[] subTitle, Integer[] imgId) {
-        super(context, R.layout.mylist, mainTitle);
+        super(context, R.layout.userlist, mainTitle);
 
         this.context = context;
         this.mainTitle = mainTitle;
@@ -28,7 +28,7 @@ public class MyListAdapter extends ArrayAdapter<String> {
 
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View rowView = inflater.inflate(R.layout.mylist, null, true);
+        View rowView = inflater.inflate(R.layout.userlist, null, true);
 
         TextView titleText = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);

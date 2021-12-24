@@ -41,10 +41,11 @@
                     android:id="@+id/imageView"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="-15dp"
+                    android:layout_marginStart="-15dp"
                     android:layout_marginTop="6.5dp"
                     android:layout_weight="1"
-                    android:src="@drawable/arrow_bg1" />
+                    android:src="@drawable/arrow_bg1"
+                    android:contentDescription="@string/todo" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -52,7 +53,8 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="0dp"
                     android:layout_weight="3"
-                    android:src="@drawable/user_pacific" />
+                    android:src="@drawable/user_pacific"
+                    android:contentDescription="@string/todo" />
 
             </LinearLayout>
 
@@ -70,13 +72,14 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="0dp"
                     android:layout_weight="3"
-                    android:src="@drawable/user_pratikshya" />
+                    android:src="@drawable/user_pratikshya"
+                    android:contentDescription="@string/todo" />
 
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginRight="-15dp"
+                    android:layout_marginEnd="-15dp"
                     android:layout_marginTop="6.5dp"
                     android:layout_weight="1"
                     android:src="@drawable/arrow_bg2" />
@@ -89,7 +92,7 @@
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner1"
                     android:padding="16dp"
-                    android:text="Android charting application xml ui design. Android charting application xml ui design tutorial with example. Android charting application xml ui design. Android charting application xml ui design. "
+                    android:text="@string/android_charting_application_xml_ui_design_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_android_charting_application_xml_ui_design"
                     android:textColor="#000" />
 
             </LinearLayout>
@@ -110,14 +113,14 @@
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner"
                     android:padding="16dp"
-                    android:text="Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example. Android charting application xml ui design tutorial with example."
+                    android:text="@string/android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example"
                     android:textColor="#000" />
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="-15dp"
+                    android:layout_marginStart="-15dp"
                     android:layout_marginTop="6.5dp"
                     android:layout_weight="1"
                     android:src="@drawable/arrow_bg1" />
@@ -152,7 +155,7 @@
                     android:id="@+id/imageView7"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginRight="-15dp"
+                    android:layout_marginEnd="-15dp"
                     android:layout_marginTop="6.5dp"
                     android:layout_weight="1"
                     android:src="@drawable/arrow_bg2" />
@@ -165,7 +168,7 @@
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner1"
                     android:padding="16dp"
-                    android:text="Android charting application xml ui design. Android charting application xml ui design tutorial with example. Android charting application xml ui design. Android charting application xml ui design. "
+                    android:text="@string/android_charting_application_xml_ui_design_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_android_charting_application_xml_ui_design"
                     android:textColor="#000" />
             </LinearLayout>
         </RelativeLayout>

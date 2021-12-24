@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0250F9"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,82 +18,76 @@
         android:textSize="35sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/loginLabel"
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/appTitle"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="@string/login_here"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:columnCount="2"
+        android:paddingTop="100dp">
 
-    <EditText
-        android:id="@+id/userEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginLabel"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
-        android:drawableStart="@drawable/ic_baseline_email_24"
-        android:drawablePadding="20dp"
-        android:hint="@string/enter_email"
-        android:inputType="textEmailAddress"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="#ddd" />
-
-    <EditText
-        android:id="@+id/userPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/userEmail"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
-        android:drawableStart="@drawable/ic_baseline_security_24"
-        android:drawablePadding="20dp"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="#ddd" />
-
-    <LinearLayout
-        android:id="@+id/userLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/userPassword"
-        android:gravity="center">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/loginBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/LoginPage"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/white"
-            android:drawableEnd="@drawable/ic_baseline_login_24"
-            android:drawablePadding="25dp"
+            android:background="#009688"
+            android:gravity="center"
             android:text="@string/login"
-            android:textColor="@color/black" />
-    </LinearLayout>
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RegisterPage"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/UserPage"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="@string/user_list"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ProfilePage"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TeamPage"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="@string/team_page"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
-    <TextView
-        android:id="@+id/forgetPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/userLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:text="@string/forget_password"
-        android:textColor="@color/white" />
+    </GridLayout>
+
 
     <TextView
         android:id="@+id/copyRightText"

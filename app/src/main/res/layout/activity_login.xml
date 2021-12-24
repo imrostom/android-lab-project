@@ -26,34 +26,17 @@
         android:layout_below="@id/appTitle"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/register_here"
+        android:text="@string/login_here"
         android:textColor="@color/white"
         android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/userName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginLabel"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
-        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
-        android:drawablePadding="20dp"
-        android:hint="Enter Name"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="#ddd" />
 
     <EditText
         android:id="@+id/userEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/userName"
+        android:layout_below="@id/loginLabel"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
@@ -98,9 +81,20 @@
             android:backgroundTint="@color/white"
             android:drawableEnd="@drawable/ic_baseline_login_24"
             android:drawablePadding="25dp"
-            android:text="@string/register"
+            android:text="@string/login"
             android:textColor="@color/black" />
     </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/forget_password"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/copyRightText"
