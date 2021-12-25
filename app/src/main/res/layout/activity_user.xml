@@ -5,9 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".User">
 
+    <TextView
+        android:id="@+id/RegisterPageLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/select_user_for_chat"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <ListView
         android:id="@+id/userList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterPageLabel"
         android:layout_marginBottom="50dp"></ListView>
 </RelativeLayout>

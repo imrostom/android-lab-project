@@ -85,7 +85,17 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-
+        <TextView
+            android:id="@+id/MessagePage"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="@string/message"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </GridLayout>
 
 
