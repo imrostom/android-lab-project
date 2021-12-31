@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:text="@string/android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example_android_charting_application_xml_ui_design_tutorial_with_example"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/type_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" />
+</LinearLayout>
