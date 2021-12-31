@@ -20,7 +20,7 @@ public class User extends AppCompatActivity {
         setContentView(R.layout.activity_user);
 
         SQLiteDatabase db = openOrCreateDatabase("messengers", MODE_PRIVATE, null);
-        final Cursor c  = db.rawQuery("SELECT * FROM users", null);
+        final Cursor c = db.rawQuery("SELECT * FROM users", null);
         c.moveToFirst();
 
         int nameIndex = c.getColumnIndex("name");
@@ -47,7 +47,7 @@ public class User extends AppCompatActivity {
         userList.setAdapter(adapter);
 
         userList.setOnItemClickListener((parent, view, position, id) -> {
-            Intent intent = new Intent(getApplicationContext(), Message.class);
+            Intent intent = new Intent(getApplicationContext(), Msg.class);
             startActivity(intent);
         });
     }
